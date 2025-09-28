@@ -89,3 +89,59 @@ The system is designed for **end-to-end full-stack development evaluation**: fro
 
 ### **Data Flow**
 
+---
+
+## **Tech Stack**
+
+| Layer       | Technology                  |
+|------------|----------------------------|
+| Frontend   | React, TailwindCSS, Chart.js, React Router, Axios |
+| Backend    | Django, Django REST Framework, SQLite/PostgreSQL |
+| Dev Tools  | Vite, Node.js, npm/yarn |
+| Icons      | lucide-react |
+
+---
+
+## **Setup Instructions**
+
+### **Frontend**
+
+```bash
+cd frontend
+npm install
+npm run dev
+Runs on http://localhost:5173
+
+Requires Axios and Chart.js installed (npm install axios chart.js lucide-react)
+
+Backend
+cd influencer-backend
+python -m venv venv
+# Activate virtualenv
+venv\Scripts\activate   # Windows
+# source venv/bin/activate  # macOS/Linux
+
+pip install -r requirements.txt  # Django, djangorestframework, django-cors-headers
+python manage.py migrate
+python manage.py createsuperuser
+python manage.py runserver
+
+
+Runs on http://localhost:4000
+
+frontend/
+ ├─ src/
+ │   ├─ pages/          # Profile, Reels, Settings, Login, Signup
+ │   ├─ layouts/        # DashboardLayout
+ │   ├─ services/       # API calls
+ │   ├─ context/        # AuthContext
+ │   ├─ App.jsx
+ │   └─ main.jsx
+backend/
+ ├─ backend/
+ │   ├─ settings.py
+ │   └─ urls.py
+ ├─ users/             # CustomUser model, serializers, views, urls
+ ├─ reels/             # Reels model, serializers, views, urls
+ └─ manage.py
+

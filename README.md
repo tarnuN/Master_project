@@ -61,11 +61,38 @@ The system is designed for **end-to-end full-stack development evaluation**: fro
 
 ### **Data & Analytics**
 
-- Engagement metrics: average likes, comments, engagement rate
-- Personality traits visualized with progress bars
-- Interests and highlights as tags
-- Chart.js visualization for analytics
+## **Data Engineering**
 
+The project includes a **data pipeline** for collecting, enriching, and analyzing influencer data.  
+
+### **Pipeline Steps**
+
+1. **Scraping Layer**  
+   - `data_pipeline/scraper.py`  
+   - Uses **requests + BeautifulSoup / Playwright** to fetch public Instagram profile data (followers, posts, likes, comments).  
+   - Handles rate-limits with headers, delays, or proxy rotation.  
+
+2. **Processing Layer**  
+   - `data_pipeline/processor.py`  
+   - Cleans and structures scraped data.  
+   - Aggregates metrics:  
+     - Average likes per post  
+     - Average comments per post  
+     - Engagement rate  
+
+3. **Image/Video Enrichment Layer**  
+   - `data_pipeline/enrichment.py`  
+   - Uses **OpenCV / TensorFlow / external ML APIs** to:  
+     - Auto-generate tags from post images (e.g., `food`, `travel`, `fashion`)  
+     - Classify vibe/ambience (e.g., `casual`, `aesthetic`, `luxury`)  
+     - Extract objects/events from reels (e.g., `person dancing`, `car`, `beach`)  
+     - Provide quality indicators (lighting, sharpness, consistency)  
+
+4. **Storage Layer**  
+   - Stores structured + enriched data in **Post** and **Reel** models in Django DB.  
+
+5. **API Layer**  
+   - `api/views.py` serves enriched data via REST endpoints for the frontend.  
 ---
 
 ## **Architecture & Approach**
@@ -91,14 +118,30 @@ The system is designed for **end-to-end full-stack development evaluation**: fro
 
 ---
 
+
+---
+
 ## **Tech Stack**
 
 | Layer       | Technology                  |
 |------------|----------------------------|
 | Frontend   | React, TailwindCSS, Chart.js, React Router, Axios |
 | Backend    | Django, Django REST Framework, SQLite/PostgreSQL |
+| Data Engg  | Python (requests, BeautifulSoup, OpenCV, TensorFlow/Keras) |
 | Dev Tools  | Vite, Node.js, npm/yarn |
 | Icons      | lucide-react |
+
+---
+
+## **Setup Instructions**
+
+### **Frontend**
+
+```bash
+cd frontend
+npm install
+npm run dev
+
 
 ---
 

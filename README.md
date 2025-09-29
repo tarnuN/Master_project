@@ -194,3 +194,5 @@ backend/
  │   └─ enrichment.py   # Image/Video processing
  └─ manage.py
 
+Screenshot 2025-09-28 170833.png
+

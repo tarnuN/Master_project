@@ -193,5 +193,7 @@ backend/
  │   ├─ processor.py    # Data cleaning & metrics
  │   └─ enrichment.py   # Image/Video processing
  └─ manage.py
+
+
 https://github.com/tarnuN/Master_project/blob/main/Screenshot%202025-09-28%20170622.png?raw=true
 

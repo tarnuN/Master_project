@@ -195,5 +195,5 @@ backend/
  └─ manage.py
 
 
-https://github.com/tarnuN/Master_project/blob/main/Screenshot%202025-09-28%20170622.png?raw=true
+https://github.com/tarnuN/Master_project/blob/6233cfc2ae87676caf42d2ce3456d789eafa4214/Screenshot%202025-09-28%20170622.png
 

@@ -131,6 +131,30 @@ The project includes a **data pipeline** for collecting, enriching, and analyzin
 | Dev Tools  | Vite, Node.js, npm/yarn |
 | Icons      | lucide-react |
 
+
+frontend/
+ ├─ src/
+ │   ├─ pages/          # Profile, Reels, Settings, Login, Signup
+ │   ├─ layouts/        # DashboardLayout
+ │   ├─ services/       # API calls
+ │   ├─ context/        # AuthContext
+ │   ├─ App.jsx
+ │   └─ main.jsx
+
+backend/
+ ├─ backend/
+ │   ├─ settings.py
+ │   └─ urls.py
+ ├─ users/              # CustomUser model, serializers, views, urls
+ ├─ posts/              # Post model, serializers, views, urls
+ ├─ reels/              # Reel model, serializers, views, urls
+ ├─ data_pipeline/      # Data engineering layer
+ │   ├─ scraper.py      # Scraping logic
+ │   ├─ processor.py    # Data cleaning & metrics
+ │   └─ enrichment.py   # Image/Video processing
+ └─ manage.py
+
+
 ---
 
 ![Screenshot](https://github.com/tarnuN/Master_project/blob/03a6f498e9570e363d9ddaf010d5e7f8d8afb8e3/Screenshot%202025-09-28%20170622.png)

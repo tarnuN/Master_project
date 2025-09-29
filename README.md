@@ -134,4 +134,4 @@ The project includes a **data pipeline** for collecting, enriching, and analyzin
 ---
 
 ![Screenshot](https://github.com/tarnuN/Master_project/blob/03a6f498e9570e363d9ddaf010d5e7f8d8afb8e3/Screenshot%202025-09-28%20170622.png)
-![Screenshot]()
+![Screenshot](https://github.com/tarnuN/Master_project/blob/99bbfdd5a6ae5069c08487f054d463eee90c97e2/Screenshot%202025-09-28%20170833.png)

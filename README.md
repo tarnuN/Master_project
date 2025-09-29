@@ -193,5 +193,7 @@ backend/
  │   ├─ processor.py    # Data cleaning & metrics
  │   └─ enrichment.py   # Image/Video processing
  └─ manage.py
+<img width="1916" height="859" alt="Screenshot 2025-09-28 170622" src="https://github.com/user-attachments/assets/7b6045d1-212a-4f26-bdb1-bce0e533fcd2" />
 
 
+<img width="1467" height="508" alt="Screenshot 2025-09-28 170833" src="https://github.com/user-attachments/assets/262c0b21-a608-4aaf-a84d-552240b0dd11" />

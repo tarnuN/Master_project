@@ -180,11 +180,18 @@ frontend/
  │   ├─ context/        # AuthContext
  │   ├─ App.jsx
  │   └─ main.jsx
+
 backend/
  ├─ backend/
  │   ├─ settings.py
  │   └─ urls.py
- ├─ users/             # CustomUser model, serializers, views, urls
- ├─ reels/             # Reels model, serializers, views, urls
+ ├─ users/              # CustomUser model, serializers, views, urls
+ ├─ posts/              # Post model, serializers, views, urls
+ ├─ reels/              # Reel model, serializers, views, urls
+ ├─ data_pipeline/      # Data engineering layer
+ │   ├─ scraper.py      # Scraping logic
+ │   ├─ processor.py    # Data cleaning & metrics
+ │   └─ enrichment.py   # Image/Video processing
  └─ manage.py
+
 
